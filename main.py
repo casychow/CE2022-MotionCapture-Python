@@ -1,3 +1,5 @@
+# Tutorial from https://www.computervision.zone/lessons/video-lessons-4/
+
 import cv2
 from cvzone.PoseModule import PoseDetector
 # PoseDetector has 33 landmarks in which we will be extracting
@@ -7,7 +9,6 @@ from cvzone.PoseModule import PoseDetector
 cap = cv2.VideoCapture("Video.mp4")
 detector = PoseDetector()  # no parameters are necessary rn
 posList = []  # position list
-
 
 while True:
     success, img = cap.read()
